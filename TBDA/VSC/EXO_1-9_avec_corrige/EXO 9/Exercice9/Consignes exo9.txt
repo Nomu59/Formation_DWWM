@@ -1,0 +1,9 @@
+Dans cet exercice, un Array vide   episodes  a déjà été créé.
+
+1. En utilisant la méthode   push  du tableau  episodes  , ajoutez les épisodes un par un. Ajoutez deux fois le troisième épisode.
+
+2. Avec la méthode  pop  , retirez l'épisode superflu du tableau   episodes  .
+
+3. Créez une variable appelée   numberOfEpisodes  qui contient la   length  du tableau  episodes  .
+
+4. Amusez-vous à ajouter et retirer des épisodes, et vérifiez que tout fonctionne correctement.

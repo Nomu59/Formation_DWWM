@@ -1,0 +1,9 @@
+Créez les trois variables suivantes :
+
+episodeTitle  : le titre de l'épisode (string) ;
+
+episodeDuration  : la durée de l'épisode (number) ;
+
+episodeHasBeenWatched  : si l'épisode a été regardé ou non (boolean).
+
+Assignez-y les valeurs correspondantes de l'objet  episode  en utilisant la notation "dot".

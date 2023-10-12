@@ -1,0 +1,24 @@
+{% extends "base.html.twig" %}
+
+{% block title %}
+    SymRecipe - {{ recipe.name }}
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <h1 class="mt-4">{{ recipe.name }}</h1>
+        <span class="badge bg-primary">Primary</span>
+
+        <p>Temps (en minute) : {{ recipe.time }}</p>
+
+        <p>Pour {{ recipe.nbPeople }} personnes</p>
+
+        <p>Difficulté : {{ recipe.difficulty }}/5</p>
+
+        <p>Prix (en €) : {{ recipe.price }}</p>
+
+        <div>
+            {{ recipe.description|raw }}
+        </div>
+    </div>
+{% endblock  %}

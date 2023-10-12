@@ -1,0 +1,9 @@
+Dans l'espace alloué, créez les trois constantes suivantes :
+
+hoursPerDay: heures par jour
+
+minutesPerHour: minutes par heure
+
+secondsPerMinute: secondes par minute
+
+Initialisez-les avec les valeurs correctes.

@@ -1,0 +1,38 @@
+body{
+    margin: 0px;
+}
+
+.groupe1{
+    display: flex;
+    justify-content: flex-start;
+    float: left;
+    background-color: aquamarine;
+    border-radius: 10%;
+    border: solid black 2px;
+}
+
+.groupe2{
+    display: flex;
+    margin-bottom: 36%;
+    margin-left: 83%;
+    background-color: aquamarine;
+    border-radius: 10%;
+    border: solid black 2px;
+}
+
+.groupe3{
+    display: flex;
+    justify-content: flex-start;
+    float: left;
+    background-color: aquamarine;
+    border-radius: 10%;
+    border: solid black 2px;
+}
+
+.groupe4{
+    display: flex;
+    margin-left: 83%;
+    background-color: aquamarine;
+    border-radius: 10%;
+    border: solid black 2px;
+}

@@ -1,0 +1,18 @@
+body{
+    background-image: url(Images/a25e1a4d8e103728ceab3fc6bc1d89cb.gif);
+    background-size: cover;
+}
+
+.myClass{
+    border: 5px solid blue;
+    background: red;
+}
+
+.cache{
+    color:white;
+}
+
+.fishMode{
+    background-image: url(Images/fish-spinning.gif);
+    color: white;
+}

@@ -1,0 +1,3 @@
+1. Créez un Array stocké dans une variable episodes, et peuplez-le avec les trois variables   firstEpisode  ,   secondEpisode  et   thirdEpisode  .
+
+2. Essayez de changer l'ordre dans lequel vous avez ajouté les épisodes, et regardez ce qu'il se passe lorsque vous rafraîchissez. 

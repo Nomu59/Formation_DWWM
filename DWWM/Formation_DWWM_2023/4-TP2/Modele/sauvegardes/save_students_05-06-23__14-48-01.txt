@@ -1,0 +1,16 @@
+Place_1 => LE PEUCH Loick 
+Place_2 => DELOURME Amaury 
+Place_3 => GACEM Nassim
+Place_4 => SAYARATH Alissa 
+Place_5 => DEWEIRELD Nicolas 
+Place_6 => OLIVIER Quentin
+Place_7 => BOUCHER Alex 
+Place_8 => MOUACI Leila 
+Place_9 => BELAHCEN Aimane 
+Place_10 => ADJAL Karim 
+Place_11 => AZAAOUAJ Younes 
+Place_12 => BALLOY Julien 
+Place_13 => LYAGOUBI Mohamed 
+Place_14 => SAHLI Asaad 
+Place_15 => GIRARD Fabien 
+Place_16 => M'HMEMDI Quentin 

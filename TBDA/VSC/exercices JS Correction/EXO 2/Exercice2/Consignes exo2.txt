@@ -1,0 +1,5 @@
+1. Dans l'éditeur JavaScript, créez deux variables,  episodeTime  et  commercialTime  ("temps de l'épisode" et "temps des pubs"), avec des valeurs appropriées (50 et 5, par exemple).
+
+2. À l'aide des deux variables de temps que vous venez de créer, ainsi que du nombre d'épisodes et du nombre de saisons (variables préexistantes), créez une variable nommée  totalShowTime  qui contient le temps de visionnage total de cette série.
+
+Les variables  numberOfSeasons  et  numberOfEpisodes  ont déjà été déclarées pour vous.

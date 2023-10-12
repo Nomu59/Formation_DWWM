@@ -1,0 +1,7 @@
+1. Lire le code JavaScript, qui est intégralement commenté, pour bien comprendre à quoi sert chaque élément, et surtout les variables à votre disposition. Il y a sûrement des éléments que vous ne comprenez pas car vous n’avez pas encore vu comment manipuler du HTML en JavaScript, mais ici vous n’avez qu’à exploiter les variables et fonctions déjà codées.
+
+2. Ecrire une condition if/else entre les lignes 34 et 38 qui appellera la fonction refuser() si l'âge saisi correspond à un mineur, et la fonction valider() s’il est majeur.
+
+3. Attention, l'âge de la majorité a été stocké dans la variable ageMajorite, donc il faut utiliser cette variable dans la condition.
+
+Une fois que vous aurez codé la bonne condition, vous pourrez enchaîner les tests en saisissant différents âges et en validant.

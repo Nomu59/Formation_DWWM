@@ -1,0 +1,1 @@
+Ecrire la condition de la même manière que l’exercice précédent au niveau des lignes 40 à 42, en prenant en compte la nouvelle variable  isControlParentalActive  .

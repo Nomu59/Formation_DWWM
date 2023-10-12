@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/Direct_Assurance_logo_2009.png">
+    <link rel="stylesheet" href="formulaire.css">
+    <title>Formulaire</title>
+</head>
+<body>
+    <header>
+        <a href="accueil.html"><img src="images/Direct_Assurance_logo_2009.png" alt="logo"></a>
+        <p><a href="formulaire.html">Formulaire</a></p>
+        <p><a href="index.html">Nos offres</a></p>
+        <p><a href="contact.html">Nous contacter</a></p>
+    </header>
+    <main>
+        <form action="eligibilite.php" method="get">
+            <section>
+                <label for="age">
+                    <p>Votre âge :</p>
+                    <input type="number" name="age" id="age">
+                </label>
+            </section>
+            <section>
+                <label for="anciennete">
+                    <p>Ancienneté du permis :</p>
+                    <input type="number" name="anciennete" id="anciennete">
+                </label>
+            </section>
+            <section>
+                <label for="accident">
+                    <p>Nombre d'accident :</p>
+                    <input type="number" name="accident" id="accident">
+                </label>
+            </section>
+            <section>
+                <label for="entree">
+                    <p>Date d'entrée dans la maison :</p>
+                    <input type="number" name="entree" id="entree">
+                </label>
+            </section>
+            <input type="submit" value="Envoyer mes données" id="bouton">
+        </form>
+    </main>
+    <footer>
+        <p>© 2022 Copyright: <a href="accueil.html">OnfaiduPognon.com</a></p>
+    </footer>
+</body>
+</html>

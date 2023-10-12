@@ -1,0 +1,21 @@
+1. Créez une classe   Episode  avec le mot clé  class  .
+
+2. Créez un constructor pour votre classe  Episode  qui devra accepter trois arguments :
+
+title  : le titre de l'épisode (string) ;
+
+duration  : la durée de l'épisode (number) ;
+
+hasBeenWatched  : si l'épisode a été regardé ou non (boolean).
+
+En utilisant le mot clé   this  , assignez les propriétés  title  ,  duration  et  hasBeenWatched  via un constructor .
+
+Avec le mot clé   new  , créez trois instances de la classe   Episode  :
+
+firstEpisode  ;
+
+secondEpisode  ;
+
+thirdEpisode  .
+
+N'oubliez pas de passer des arguments appropriés à chaque instance.

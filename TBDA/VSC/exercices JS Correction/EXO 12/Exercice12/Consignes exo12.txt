@@ -1,0 +1,5 @@
+Le tableau   episodes  a déjà été déclaré pour vous.
+
+1. Itérez le tableau   episodes  et assignez la valeur false à la propriété   hasBeenWatched  de chaque épisode, en utilisant une boucle for, for…in ou for…of.
+
+2. Maintenant, faites en sorte que tous les épisodes soient considérés comme ayant été vus. Cela fonctionne-t-il également ?

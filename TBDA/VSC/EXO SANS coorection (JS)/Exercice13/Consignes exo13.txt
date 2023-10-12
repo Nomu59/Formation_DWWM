@@ -1,0 +1,41 @@
+Avant de commencer l’exercice, nous allons juste revoir deux notions : le calcul d’une moyenne et comment parcourir un tableau.
+
+Calculer une moyenne
+Lorsque l’on a un ensemble de valeurs, le calcul de la moyenne se fait en 3 étapes :
+
+on fait la somme de toutes les valeurs (qu’on nommera   sommeValeurs  ) ;
+
+on compte le nombre de valeurs que l’on a (qu’on nommera   nombreValeurs  ) ;
+
+on calcule la moyenne en faisant moyenne = sommeValeurs / nombreValeurs  .
+
+Parcourir un tableau
+Lorsque l’on a un tableau (par exemple  monTableau  ) on utilise la boucle for of.
+
+Par exemple :
+
+for (let elementDeTableau of monTableau) {
+    console.log(elementDeTableau); //Affiche chaque élément individuellement
+}
+
+Vous pouvez manipuler   elementDeTableau  comme bon vous semble (par exemple, l’ajouter dans un autre tableau, l'additionner avec une variable globale, etc.).
+
+
+Votre application de streaming permet aux utilisateurs de noter les séries sur 5 étoiles. Votre collègue a construit le composant pour afficher la note moyenne pour chaque série, mais elle a besoin que vous écriviez la fonction qui va calculer cette moyenne.
+
+Elle vous explique que la fonction doit prendre un tableau de nombres comme argument, et retourner un nombre qui correspond à la note moyenne calculée.
+
+Suivez les étapes suivantes :
+
+1. Au bon endroit dans la déclaration de fonction, choisissez un nom pour le paramètre de votre fonction. N'oubliez pas, ce sera un tableau de nombres.
+Pour calculer une moyenne, on ajoute toutes les valeurs ensemble, puis on divise par le nombre de valeurs.
+
+2. Créez une variable qui stockera la somme de tous les nombres du tableau. Initialisez-la avec la valeur zéro.
+
+3. Sachant que le paramètre reçu est un tableau de nombres, utilisez une boucle for pour ajouter chaque nombre du tableau à votre variable   somme  .
+
+4. Créez une constante qui contient le résultat de la somme finale divisée par le nombre de valeurs dans le tableau reçu en argument.
+
+5. Faites en sorte que la fonction retourne le résultat final.
+
+6. BONUS : La troisième série, Star Wars, n'a pas l'air de fonctionner correctement. En fait, elle n'a pas encore reçu de note, donc le tableau passé ne contient aucune valeur.

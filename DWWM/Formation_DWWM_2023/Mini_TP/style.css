@@ -1,0 +1,74 @@
+/* Page entière */
+body {
+    color: yellow;
+    margin: 0px;
+    background-image: url("Images/photo-1506318137071-a8e063b4bec0.avif");
+}
+
+
+/* Header */
+/* Tout le header */
+header{
+    display: flex;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border-top: solid yellow;
+    border-bottom: solid yellow;
+    background-color: black;
+}
+
+/* Logo */
+header a img{
+    width: 100px;
+}
+
+/* Liens vers les épisodes*/
+header a.episode{
+    text-decoration: none;
+    color: yellow;
+    background-color: gray;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: solid yellow;
+}
+
+/* Bouton connexion */
+header a#button{
+    text-decoration: none;
+    color: yellow;
+    background-color: gray;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: solid yellow;
+}
+
+/* Main de la page d'accueil */
+/* Bannière */
+main img#banner{
+    margin: 0px 100px 100px 100px;
+    width: 89%;
+    height: 500px;
+}
+
+/* Trait de séparation */
+main hr{
+    border: none;
+    border-top: 3px double yellow;
+    color: yellow;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+/* Zone affiches épisodes */
+main div{
+    justify-content: space-between;
+    margin-left: 7%;
+}
+
+/* Affiches épisodes */
+main a.episode{
+    margin: 100px;
+}

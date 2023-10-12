@@ -1,0 +1,91 @@
+/* Page entière */
+
+body{
+    margin: 0px;
+}
+
+
+/* Haut de la page */
+
+header{
+    display: flex;
+    border: solid 5px black;
+    background-color: #c8c8c8;
+}
+
+header p{
+    display: flex;
+    margin: 25px;
+    align-items: center;
+}
+
+header p a{
+    color: black;
+    font-weight: bolder;
+    font-size: larger;
+    text-decoration: none;
+}
+
+img{
+    width: 100px;
+    margin: 10px;
+}
+
+
+/* Centre de la page */
+
+main{
+    margin: 0px 20% 120px;
+}
+
+section h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: solid 5px black;
+}
+
+section p{
+    display: flex;
+    justify-content: center;
+}
+
+#bleu{
+    background-color: #3c67f1;
+}
+
+#vert{
+    background-color: #3cf13c;
+}
+
+#orange{
+    background-color: #f18d3c;
+}
+
+#rouge{
+    background-color: #f1423c;
+}
+
+#gris{
+    background-color: #6e6e6e;
+}
+
+
+/* Bas de la page */
+
+footer{
+    border: solid 5px black;
+    background-color: #c8c8c8;
+}
+
+footer p{
+    display: flex;
+    justify-content: center;
+    color: grey;
+}
+
+footer p a{
+    color: grey;
+    text-decoration-color: black;
+}

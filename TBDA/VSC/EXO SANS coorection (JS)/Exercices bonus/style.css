@@ -1,0 +1,15 @@
+div{
+    border: 2px solid black;
+    padding: 5px;
+    margin: 2px;
+    width: 30%;
+}
+
+.bleu{
+    background-color: blue;
+    color: white;
+}
+
+.jaune{
+    background-color: yellow;
+}

@@ -1,0 +1,9 @@
+Créez un objet (Object, en anglais) et stockez-le dans une variable appelée   episode  . Utilisez bien des accolades  {}  et mettez les trois attributs suivants :
+
+title  : le titre de l'épisode ;
+
+duration  : la durée de l'épisode ;
+
+hasBeenWatched  : si l'épisode a été visionné ou non.
+
+Associez des valeurs appropriées à chaque attribut.

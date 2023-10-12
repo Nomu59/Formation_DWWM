@@ -1,0 +1,89 @@
+/*1 : Sélectionner toutes les colonnes de la table SERV.*/
+SELECT * FROM serv;
+
+/*3 : Sélectionner les colonnes SERVICE et NOSERV de la table SERV.*/
+SELECT service, noserv FROM serv;
+
+/*5 : Sélectionner les emplois de la table EMP.*/
+SELECT emploi FROM emp;
+
+/*7 : Sélectionner les employés du service N°3.*/
+SELECT * FROM emp WHERE noserv = 3;
+
+/*9 : Sélectionner les noms, numéros de service de tous les services dont le numéro est supérieur à 2.*/
+SELECT service, noserv FROM serv WHERE noserv > 2;
+
+/*11 : Sélectionner les employés dont la commission est inférieure au salaire. Vérifiez le résultat jusqu'à obtenir la bonne réponse.*/
+SELECT * FROM emp WHERE comm < sal;
+
+/*13 : Sélectionner les employés qui touchent éventuellement une commission et dans l'ordre croissant des commissions.*/
+SELECT * FROM emp WHERE comm IS NOT NULL ORDER BY comm;
+
+/*15 : Sélectionner les employés qui n'ont pas de chef.*/
+SELECT * FROM emp WHERE sup IS NULL;
+
+/*17 : Sélectionner les vendeurs du service 6 qui ont un revenu mensuel supérieur ou égal à 9500 €.*/
+SELECT * FROM emp WHERE emploi = "VENDEUR" AND noserv = 6 AND sal + comm >= 9500;
+
+/*19 : Sélectionner les directeurs qui ne sont pas dans le service 3.*/
+SELECT * FROM emp WHERE emploi = "DIRECTEUR" AND noserv != 3;
+
+/*21 : Sélectionner les "directeurs et les techniciens" du service 1.*/
+SELECT * FROM emp WHERE (emploi = "DIRECTEUR" OR emploi = "TECHNICIEN") AND noserv = 1;
+
+/*23 : Sélectionner les employés qui ne sont ni directeur, ni technicien et travaillant dans le service 1.*/
+SELECT * FROM emp WHERE emploi != "Directeur" AND emploi != "TECHNICIEN" AND noserv = 1;
+
+/*25 : Sélectionner les employés qui ne sont ni technicien, ni comptable, ni vendeur.*/
+SELECT * FROM emp WHERE emploi NOT IN ("TECHNICIEN", "COMPTABLE", "VENDEUR");
+
+/*27 : Sélectionner les subalternes qui ne sont pas dans les services 1, 3, 5.*/
+SELECT * FROM emp WHERE sup IS NOT NULL AND noserv NOT IN (1, 3, 5);
+
+/*29 : Sélectionner les employés qui gagnent moins de 20000 et plus de 40000 euros.*/
+SELECT * FROM emp WHERE (sal + comm) BETWEEN 20001 AND 39999;
+
+/*31 : Sélectionner les directeurs des services 2, 3, 4, 5 sans le IN.*/
+SELECT * FROM emp WHERE emploi = "DIRECTEUR" AND noserv BETWEEN 2 AND 5;
+
+/*33 : Sélectionner les employés dont le nom se termine par T.*/
+SELECT * FROM emp WHERE nom LIKE "%T";
+
+/*35 : Sélectionner les employés ayant exactement un E dans leur nom.*/
+SELECT * FROM emp WHERE nom LIKE "%E%" AND nom NOT LIKE "%E%E%";
+
+/*37 : Sélectionner les employés dont le nom s'écrit avec 6 caractère et qui se termine par N.*/
+SELECT * FROM emp WHERE nom LIKE "_____N";
+
+/*39 : Sélectionner les employés dont le nom ne s'écrit pas avec 5 caractères.*/
+SELECT * FROM emp WHERE nom NOT LIKE "_____";
+
+/*41 : Trier les employés (nom, prénom, n° de service, salaire) du service 3 par ordre de salaire décroissant.*/
+SELECT nom, prenom, noserv, sal FROM emp WHERE noserv = 3 ORDER BY sal DESC;
+
+/*43 : Trier les employés (nom, prénom, n° de service, salaire, emploi) par emploi, et pour chaque emploi par ordre décroissant de salaire.*/
+SELECT nom, prenom, noserv, sal, emploi FROM emp ORDER BY emploi, sal DESC;
+
+/*45 : Trier les employés (nom, prénom, n° de service, commission) du service 3 par ordre croissant de commission.*/
+SELECT nom, prenom, noserv, comm FROM emp WHERE noserv = 3 ORDER BY comm;
+
+/*47 : Sélectionner le nom, le prénom, l'emploi, le nom du service de l'employé pour tous les employés.*/
+SELECT nom, prenom, emploi, service FROM emp INNER JOIN serv ON emp.noserv = serv.noserv;
+
+/*48 : Sélectionner le nom, l'emploi, le numéro de service, le nom du service pour tous les employés.*/
+SELECT nom, emploi, emp.noserv, service FROM emp INNER JOIN serv ON emp.noserv = serv.noserv;
+
+/*49 : Idem en utilisant des alias pour les noms de tables.*/
+SELECT nom, prenom, emploi, service FROM emp AS employe INNER JOIN serv AS service ON employe.noserv = service.noserv;
+
+/*50 : Sélectionner le nom, l'emploi, suivis de toutes les colonnes de la table SERV pour tout les employés.*/
+SELECT nom, emploi, serv.* FROM emp INNER JOIN serv ON emp.noserv = serv.noserv;
+
+/*51 : Sélectionner les nom et date d'embauche des employés suivi des nom et date d'embauche de leur supérieur pour les employés plus ancien que leur supérieur, dans l'ordre nom employés, nom supérieurs.*/
+SELECT emp.nom, emp.embauche, emp2.nom AS nomSuperieur, emp2.embauche AS embaucheSuperieur FROM emp, emp AS emp2 WHERE emp2.noemp = emp.sup AND emp.embauche < emp2.embauche;
+
+/*52 : Sélectionner sans doublon les prénoms des directeurs et "les prénoms des techniciens du service 1" avec un UNION.*/
+SELECT prenom FROM emp WHERE emploi = "DIRECTEUR" UNION SELECT prenom FROM emp WHERE emploi = "TECHNICIEN" AND noserv = 1;
+
+/*53 : Sélectionner les numéros de services n'ayant pas d'employés sans une jointure externe.*/
+SELECT noserv FROM serv WHERE noserv NOT IN (SELECT DISCTINCT noserv FROM emp);

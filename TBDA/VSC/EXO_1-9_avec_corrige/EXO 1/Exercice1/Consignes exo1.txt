@@ -1,0 +1,3 @@
+1. Créez une variable appelée   numberOfSeasons  et assignez-lui la valeur 8 entre les lignes créées pour vous dans l'éditeur JavaScript (l'onglet appelé "JS"). Pensez à utiliser le mot clé let, et n'oubliez pas le point-virgule en fin de ligne !
+
+2. Ensuite, créez une variable appelée  numberOfEpisodes  et assignez-lui la valeur 10.

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil</title>
+</head>
+<body>
+  <!-- Formulaire pour executer le mélange -->
+  <form action="Ctrl/execFunc.php" method="get">
+    <div>
+      <label for="tableau">Cliquez ici pour mélanger</label>
+    </div>
+    <div>
+      <input type="submit" value="Mélanger">
+    </div>
+  </form>
+
+  <!-- Formulaire pour afficher le dernier mélange effectué -->
+  <form action="View/affichage.php" method="get">
+    <div>
+      <label for="latest">Cliquez ici pour Afficher le dernier tableau affiché</label>
+    </div>
+    <div>
+      <input type="submit" value="Afficher">
+    </div>
+  </form>
+
+  <!-- Formulaire pour choisir le fichier à mélanger  -->
+  
+    <form action="Ctrl/execFuncFile.php">
+      <div>
+        <label for="select">Cliquez ici pour sélectionner le tableau à afficher (format .json)</label>
+      </div>
+      <div>
+        <input type="file" name="select" accept=".json" required>
+      </div>
+      <div>
+        <input type="submit" value="Afficher">
+      </div>
+    </form>
+</body>
+</html>
+
+
+

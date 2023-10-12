@@ -1,0 +1,59 @@
+h1{
+    color: purple;
+  }
+  
+  #parent{
+    border: 2px black solid;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: blue;
+  }
+  
+  #enfant{
+    border: 2px black solid;
+    width: 250px;
+    height: 250px;
+    background: red;
+  }
+  
+  .text-gold{
+    color: gold;
+  }
+  
+  #garage{
+    border: 2px solid black;
+    padding: 20px;
+  }
+  
+  .voiture{
+    color: white;
+    background: #000;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 20px;
+  }
+
+  .flag-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 2px black;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 2px;
+    width: 400px;
+  }
+
+  .flag-card img{
+    width: 400px;
+    height: 200px;
+  }
+
+  .flags{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
